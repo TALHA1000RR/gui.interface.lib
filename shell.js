@@ -7,15 +7,15 @@ var t=true
 var a=""
 var inputString=""
 
-const rl = readline.createInterface({ input });
-
+const rl = readline.createInterface({ input , output});
+for(i=0;i<1000;i++){
     rl.question('> : ', (answer) => {
-    for(i=0;i<1000;i++){
+    
     var w =cds.exec( "/usr/bin/"+answer  , function (err , out ,se){
 	     console.log(`${out}\n`);
              if (err!=null) console.log(`${err}`);
          });
-    };
+   
     rl.close();
    });
-      
+ };      
