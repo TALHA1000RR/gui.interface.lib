@@ -1,3 +1,0 @@
-start.py
-hello1.txt
-hello2.txt
