@@ -1,5 +1,0 @@
-print("\033c\033[43;30m\n")
-print("start operation system simulator")
-i=input("give me you nick name ? :")
-print(i)
-print("game simulator go here ")
