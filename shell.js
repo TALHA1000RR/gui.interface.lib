@@ -1,21 +1,25 @@
+var fs = require("fs");
 var cds = require("child_process")
+var args= process.argv.slice(2);
 const readline = require('node:readline');
 const { stdin: input, stdout: output } = require('node:process');
 var answer=""
 console.log('\033c\033[43;30m\n');
 var t=true
 var a=""
+var d=""
 var inputString=""
 
-const rl = readline.createInterface({ input , output});
-for(i=0;i<1000;i++){
-    rl.question('> : ', (answer) => {
+fs.readFile ( args[0] , function  ( err , s ){
     
-    var w =cds.exec( "/usr/bin/"+answer  , function (err , out ,se){
-	     console.log(`${out}\n`);
-             if (err!=null) console.log(`${err}`);
-         });
+    ss=s.toString()    
    
-    rl.close();
+    par=ss.split(",");
+    for (i = 0 ; i < par.length ; i=i+1 ) {
+             
+        	  var w = cds.exec ( "/bin/sh -c '" + par[i] + "'" , function (err , out ,se) {
+                      console.log( out.toString() + "\r\n"  );
+          	   });
+               
+   	  }
    });
- };      
