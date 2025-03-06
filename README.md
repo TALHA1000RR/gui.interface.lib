@@ -1,5 +1,5 @@
-# command.line.mini.editor
+# command.line.mini.calc
 
 
-mini editor press enter empty line to exit
+mini calc press enter empty line to exit
 
