@@ -5,3 +5,7 @@ make you blockchain example
 https://en.wikipedia.org/wiki/SHA-2
 
 
+https://ss64.com/bash/base64.html
+
+
+
