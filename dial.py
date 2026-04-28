@@ -5,7 +5,7 @@ class AnalogClockApp:
     def __init__(self, root):
         self.root = root
         self.root.title("Relógio 0...9")
-        self.root.configure(bg='yellow')
+        self.root.configure(bg='black')
 
         # Entrada de texto
         self.entry = tk.Entry(root, font=("Arial", 14))
