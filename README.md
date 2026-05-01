@@ -1,2 +1,2 @@
-animation of a multi interruptor select a dial
+binary object file format sample
 
