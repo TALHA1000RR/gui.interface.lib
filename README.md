@@ -1,1 +1,1 @@
-score class builder
+library of gui interface
